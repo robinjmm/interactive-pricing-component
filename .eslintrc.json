@@ -31,5 +31,8 @@
 				"props": false
 			}
 		]
-	}
+	},
+	"ignorePatterns": [
+		"dist/"
+	]
 }
