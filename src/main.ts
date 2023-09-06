@@ -5,4 +5,4 @@ let num = 1;
 
 btn?.addEventListener("click", () => {
 	console.log(num++);
-})
+});
