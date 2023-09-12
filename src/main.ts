@@ -1,8 +1,12 @@
-const btn = document.querySelector("button");
-console.log(btn);
+import "@fortawesome/fontawesome-free/css/fontawesome.min.css";
+import "@fortawesome/fontawesome-free/css/brands.min.css";
 
-let num = 1;
+const slider = document.querySelector("#pricing");
+console.log(slider);
 
-btn?.addEventListener("click", () => {
-	console.log(num++);
+document.addEventListener("DOMContentLoaded", () => {
+	slider?.addEventListener("input", (event) => {
+		const target = event.target as HTMLInputElement;
+		console.log(target.value);
+	})
 });
