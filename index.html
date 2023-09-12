@@ -17,20 +17,36 @@
 
 <body>
 
-	Simple, traffic-based pricing
-	Sign-up for our 30-day trial. No credit card required.
+	<header>
+		<h1>Simple, traffic-based pricing</h1>
+		<p>Sign up for our 30-day trial.</p>
+		<p>No credit card required.</p>
+	</header>
 
-	Pageviews
-	$ /month
+	<main>
+		<article>
+			<p>100K PAGE VIEWS</p>
+			<form action="">
+				<label for="pricing">100K PAGE VIEWS</label>
+				<input type="range" name="pricing" id="pricing" min="8" max="36">
+				<p><span>$16.00</span>/month</p>
 
-	Monthly Billing
-	Yearly Billing 25% discount
+				<div class="toggle">
+					<p>Monthly Billing</p>
+					<input type="checkbox" name="billing-option" aria-label="Billing Option">
+					<p>Yearly Billing <span> -25% </span></p>
+				</div>
 
-	Unlimited websites
-	100% data ownership
-	Email reports
+				<ul class="features">
+					<li>Unlimited Websites</li>
+					<li>100% Data Ownership</li>
+					<li>Email Reports</li>
+				</ul>
 
-	Start my trial
+				<button type="submit">Start My Trial</button>
+			</form>
+		</article>
+	</main>
 </body>
 
 </html>
