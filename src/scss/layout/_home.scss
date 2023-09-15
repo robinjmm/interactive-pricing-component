@@ -1,0 +1,38 @@
+@use "../base/abstracts" as *;
+
+body {
+	background-color: var(--bg-body);
+	background-image: url("/images/bg-pattern.svg");
+	background-repeat: no-repeat;
+	font-family: var(--ff-primary);
+	font-weight: var(--fw-normal);
+	color: var(--text-primary);
+	padding: toRem(90) 0;
+}
+
+
+// TODO: add margin between two paragraphs inside the header: 4px
+header {
+	text-align: center;
+	font-size: var(--13px);
+	background-image: url("/images/pattern-circles.svg");
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+	padding: toRem(32) 0;
+
+	& p:first-of-type {
+		margin-bottom: toRem(5);
+	}
+}
+
+h1 {
+	font-size: var(--20px);
+	color: var(--text-accent-dark);
+	margin-bottom: toRem(8);
+}
+
+footer {
+	margin-top: toRem(36);
+	text-align: center;
+}

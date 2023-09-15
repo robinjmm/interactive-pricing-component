@@ -1,0 +1,23 @@
+@use "../base/abstracts" as *;
+
+.toggle {
+	position: relative;
+	appearance: none;
+	width: toRem(43);
+	height: toRem(22);
+	background-color: var(--bg-toggle);
+	border-radius: toRem(16);
+
+	&::before {
+		display: inline-block;
+		content: "";
+		background-color: #fff;
+		width: toRem(14);
+		height: toRem(14);
+		border-radius: 50%;
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		left: toRem(4);
+	}
+}

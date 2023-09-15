@@ -1,3 +1,10 @@
 @use "base/variables";
 @use "base/fonts";
 @use "base/defaults";
+
+@use "layout/home";
+
+@use "components/card";
+@use "components/toggle";
+@use "components/buttons";
+@use "components/fa-icons";

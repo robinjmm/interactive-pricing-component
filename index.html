@@ -24,26 +24,34 @@
 	</header>
 
 	<main>
-		<article>
-			<p>100K PAGE VIEWS</p>
+		<article class="card">
 			<form action="">
-				<label for="pricing">100K PAGE VIEWS</label>
+				<label for="pricing" class="card__views">100K PAGEVIEWS</label>
 				<input type="range" name="pricing" id="pricing" min="8" max="36">
-				<p><span>$16.00</span>/month</p>
+				<p class="card__plan"><span class="card__price">$16.00</span>/ month</p>
 
-				<div class="toggle">
+				<div class="card__billing">
 					<p>Monthly Billing</p>
-					<input type="checkbox" name="billing-option" aria-label="Billing Option">
-					<p>Yearly Billing <span> -25% </span></p>
+					<input class="toggle" type="checkbox" name="billing-option" aria-label="Billing Option">
+					<p>Yearly Billing <span class="card__discount"> -25% </span></p>
 				</div>
 
-				<ul class="features">
-					<li>Unlimited Websites</li>
-					<li>100% Data Ownership</li>
-					<li>Email Reports</li>
+				<ul class="card__features">
+					<li class="card__feature-item">
+						<img class="card__checkmark" src="./public/images/icon-check.svg" alt="A green checkmark">
+						Unlimited Websites
+					</li>
+					<li class="card__feature-item">
+						<img class="card__checkmark" src="./public/images/icon-check.svg" alt="A green checkmark">
+						100% Data Ownership
+					</li>
+					<li class="card__feature-item">
+						<img class="card__checkmark" src="./public/images/icon-check.svg" alt="A green checkmark">
+						Email Reports
+					</li>
 				</ul>
 
-				<button type="submit">Start My Trial</button>
+				<button class="btn" type="submit">Start My Trial</button>
 			</form>
 		</article>
 	</main>

@@ -1,0 +1,9 @@
+@use "../base/abstracts" as *;
+
+.btn {
+	padding: toRem(12) toRem(46);
+	border: none;
+	color: var(--text-accent-grey);
+	background-color: var(--bg-btn);
+	border-radius: toRem(20);
+}
