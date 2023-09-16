@@ -7,6 +7,18 @@
 	height: toRem(22);
 	background-color: var(--bg-toggle);
 	border-radius: toRem(16);
+	cursor: pointer;
+	transition: background-color .1s ease-in-out;
+
+	&:active,
+	&:checked {
+		background-color: var(--bg-toggle-active);
+	}
+
+	&:focus-visible {
+		outline: 1px solid var(--toggle-outline);
+		outline-offset: 3px;
+	}
 
 	&::before {
 		display: inline-block;
@@ -19,5 +31,10 @@
 		top: 50%;
 		transform: translateY(-50%);
 		left: toRem(4);
+		transition: transform 0.2s ease-in-out;
+	}
+
+	&:checked.toggle::before {
+		transform: translate(23px, -50%);
 	}
 }
